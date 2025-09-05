@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.mysearchapp.MySearchApp.controller.MainController"
+            stylesheets="style.css">
+
+    <top>
+        <Label text="Excel Search Application"
+               styleClass="header-label"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <HBox spacing="10">
+                <Button text="Select Excel File" onAction="#handleFileSelect"/>
+                <Label fx:id="fileLabel" text="No file selected."/>
+            </HBox>
+
+            <HBox spacing="10">
+                <TextField fx:id="searchField" promptText="Enter search string"/>
+                <Button text="Search" onAction="#handleSearch"/>
+            </HBox>
+
+            <TableView fx:id="resultTable" prefHeight="200">
+                <columns>
+                    <TableColumn fx:id="dataColumn" text="Data" prefWidth="250"/>
+                    <TableColumn fx:id="actionColumn" text="Action" prefWidth="250"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+</BorderPane>
