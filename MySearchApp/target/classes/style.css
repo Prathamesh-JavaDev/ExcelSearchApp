@@ -1,0 +1,49 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f6e4c0; /* light beige */
+}
+
+.header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366; /* deep blue header */
+    -fx-padding: 10 0 20 0;
+}
+
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #003366; /* consistent dark blue labels */
+}
+
+Button {
+    -fx-background-color: #004d80; /* deep blue buttons */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 15 5 15;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+Button:hover {
+    -fx-background-color: #0066a2; /* hover blue */
+}
+
+TextField {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-padding: 5 7 5 7;
+}
+
+TableView {
+    -fx-border-color: #ced4da;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: #e0e0e0;
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+}
+
+#fileLabel {
+    -fx-text-fill: #333333; /* dark gray for file name */
+}

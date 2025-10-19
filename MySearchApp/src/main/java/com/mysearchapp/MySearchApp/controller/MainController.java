@@ -26,12 +26,12 @@ public class MainController {
     private File selectedFile;
 
     @FXML
-    private void initialize() {
+    protected void initialize() {
         // Nothing to initialize at startup for dynamic columns
     }
 
     @FXML
-    private void handleFileSelect() {
+	protected void handleFileSelect() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select Excel File");
         fileChooser.getExtensionFilters().addAll(
