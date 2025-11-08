@@ -1,5 +1,5 @@
 # ExcelSearchApp
-A standalone application that can search exact as well as similar matching tuples in a Excel file. .xls &amp; .xlsx files are supported.
+A standalone Java application that can search <b>exact & similar</b> matching tuples in a single Excel file. Extensions supported are .xls &amp; .xlsx both.
 
 
 
